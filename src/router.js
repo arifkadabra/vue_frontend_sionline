@@ -10,8 +10,9 @@ const CreateShippingInstruction = () => import("./component/shippinginstruction/
 const MyBooking = () => import("./component/mybooking/MyBooking.vue")
 
 export const router = createRouter({
-    base: '/frontend',
-    history: createWebHistory(import.meta.env.BASE_URL),
+    // base: '/frontend',
+    // history: createWebHistory(import.meta.env.BASE_URL),
+    history: createWebHistory('/sionline/vue_frontend_sionline/dist/'), 
     linkActiveClass: 'active',
     routes: [
         { path: '/:pathMatch(.*)*', component: NotFound },  
