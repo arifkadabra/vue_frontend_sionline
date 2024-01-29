@@ -3,7 +3,8 @@ const url = `${import.meta.env.VITE_API_URL}/api`;
 import { router } from '../router';
 
 const Api = axios.create({
-    baseURL: url
+    baseURL: url,
+    headers: {'Access-Control-Allow-Origin': '*'},
 })
 
 Api.interceptors.response.use(function (response) {
